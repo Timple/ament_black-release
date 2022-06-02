@@ -1,0 +1,12 @@
+Source: ros-galactic-ament-black
+Section: misc
+Priority: optional
+Maintainer: Tim Clephas <tim.clephas@nobleo.nl>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-galactic-ament-copyright <!nocheck>, ros-galactic-ament-flake8 <!nocheck>, ros-galactic-ament-pep257 <!nocheck>, ros-galactic-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-galactic-ament-black
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, black, python3-unidiff, ros-galactic-ros-workspace
+Description: The ability to check code against style conventions using black and generate xUnit test result files.
